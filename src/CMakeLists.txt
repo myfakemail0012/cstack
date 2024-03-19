@@ -1,0 +1,1 @@
+add_library(CStack cstack.c)
