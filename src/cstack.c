@@ -12,7 +12,7 @@ typedef struct cstack_s
 static cstack_t *cstack;
 static size_t type_size;
 
-void cstack_push_c(char data)
+void cstack_push(char data)
 {
 	cstack_t *new = malloc(sizeof(cstack_t));
 	new->data = data;
@@ -20,7 +20,7 @@ void cstack_push_c(char data)
 	cstack = new;
 }
 
-char cstack_pop_c()
+char cstack_pop()
 {
 	if (cstack == NULL)
 	{
