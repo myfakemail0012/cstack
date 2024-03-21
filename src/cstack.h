@@ -1,3 +1,6 @@
+#ifndef CSTACK_H
+#define CSTACK_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -33,3 +36,5 @@ type cstack_pop()\
     return value;\
 }
 // clang-format on
+
+#endif // CSTACK_H
